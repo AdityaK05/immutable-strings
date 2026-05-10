@@ -6,7 +6,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/AdityaK05/immutable-strings.git'
+                git branch:'main',url:'https://github.com/AdityaK05/immutable-strings.git'
             }
         }
 
