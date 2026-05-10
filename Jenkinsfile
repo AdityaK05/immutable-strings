@@ -6,7 +6,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'YOUR_GITHUB_REPO_URL'
+                git 'https://github.com/AdityaK05/immutable-strings.git'
             }
         }
 
@@ -54,7 +54,7 @@ pipeline {
 
         stage('Run Application') {
             steps {
-                sh 'java -cp target/immutable-string-project-1.0-SNAPSHOT.jar com.example.App'
+                sh 'java -cp target/classes com.example.App'
             }
         }
 
@@ -80,4 +80,3 @@ pipeline {
         }
     }
 }
-
